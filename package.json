@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 5432",
     "build": "ng build",
     "build:lib": "ng build component-lib",
     "build:wc": "ng build webcomponent",
@@ -15,7 +15,7 @@
   },
   "private": true,
   "dependencies": {
-    "webcomponent": "file:./webcomponent-0.0.1.tgz",
+    "@wolfi/webcomponent": "file:./wolfi-webcomponent-0.0.1.tgz",
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",

@@ -1,12 +1,11 @@
 {
-  "name": "webcomponent",
+  "name": "@wolfi/webcomponent",
   "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^18.2.0",
-    "@angular/core": "^18.2.0"
+  "main": "wc-1.js",
+  "./package.json": {
+    "default": "./package.json"
   },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false
+  ".": {
+    "default": "wc-1.js"
+  }
 }

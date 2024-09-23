@@ -4,6 +4,9 @@ import {createCustomElement} from '@angular/elements';
 import {ApplicationRef} from '@angular/core';
 import {ComponentLibComponent} from 'component-lib';
 
+(() => {
+  console.log('Autocall function works!!!');
+})()
 
 export async function registerComponent () {
   const app: ApplicationRef = await createApplication(mainConfig);

@@ -132,7 +132,7 @@
       }
     },
     "webcomponent": {
-      "projectType": "library",
+      "projectType": "application",
       "root": "projects/webcomponent",
       "sourceRoot": "projects/webcomponent/src",
       "prefix": "lib",

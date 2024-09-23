@@ -9,6 +9,9 @@
     "inlineSources": true,
     "types": []
   },
+  "files": [
+    "src/main.ts"
+  ],
   "exclude": [
     "**/*.spec.ts"
   ]
