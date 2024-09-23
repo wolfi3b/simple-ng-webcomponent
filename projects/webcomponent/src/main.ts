@@ -4,8 +4,13 @@ import {createCustomElement} from '@angular/elements';
 import {ApplicationRef} from '@angular/core';
 import {ComponentLibComponent} from 'component-lib';
 
-(() => {
-  console.log('Autocall function works!!!');
+(async () => {
+  const app: ApplicationRef = await createApplication(mainConfig);
+
+  // Define Web Components
+  const myLibraryComponent = createCustomElement<ComponentLibComponent>(ComponentLibComponent, {injector: app.injector});
+  customElements.define('wc-1', myLibraryComponent);
+  console.log('Autocall register function works!!!');
 })()
 
 export async function registerComponent () {

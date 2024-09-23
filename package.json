@@ -10,8 +10,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "pack:wc": "npm run build:lib && npm run build:wc && npm run pack:minWc && npm run pack:npmWc",
-    "pack:minWc": "bash -c 'cat ./dist/webcomponent/{runtime,polyfills,main}.js > ./dist/webcomponent/wc-1.js'",
-    "pack:npmWc": "cp ./projects/webcomponent/package.json ./dist/webcomponent &&  find ./dist/webcomponent -type f ! -name 'wc-1.js' ! -name 'package.json' -exec rm {} + && npm pack ./dist/webcomponent"
+    "pack:minWc": "bash -c 'cat ./dist/webcomponent/browser/main.js > ./dist/webcomponent/browser/wc-1.js'",
+    "pack:minWc2": "bash -c 'cat ./dist/webcomponent/browser/{polyfills,main}.js > ./dist/webcomponent/browser/wc-1.js'",
+    "pack:npmWc": "cp ./projects/webcomponent/package.json ./dist/webcomponent/browser &&  find ./dist/webcomponent/browser -type f ! -name 'wc-1.js' ! -name 'package.json' -exec rm {} + && npm pack ./dist/webcomponent/browser"
   },
   "private": true,
   "dependencies": {
